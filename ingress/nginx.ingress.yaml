@@ -11,13 +11,6 @@ spec:
   rules:
   - http:
       paths:
-      - path: /(.*)
-        pathType: Prefix
-        backend:
-          service:
-            name: svc-soa-main
-            port:
-              number: 80
       - path: /pay(/|$)(.*)
         pathType: Prefix
         backend:
@@ -25,3 +18,11 @@ spec:
             name: svc-soa-payment
             port:
               number: 80
+      - path: /(.*)
+        pathType: Prefix
+        backend:
+          service:
+            name: svc-soa-main
+            port:
+              number: 80
+      

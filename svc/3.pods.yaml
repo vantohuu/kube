@@ -10,15 +10,15 @@ spec:
     image: huu2412002/soa-backend:v01
     resources:
       limits:
-        memory: "128Mi"
-        cpu: "100m"
+        memory: "1024Mi"
+        cpu: "1000m"
     ports:
       - containerPort: 8080
   - name: redis
     image: redis
     resources:
       limits:
-        memory: "128Mi"
-        cpu: "100m"
+        memory: "300Mi"
+        cpu: "200m"
     ports:
       - containerPort: 6379
