@@ -7,13 +7,13 @@ metadata:
 spec:
   containers:
   - name: soa-payment
-    image: huu2412002/soa-payment-service:v01
+    image: huu2412002/soa-payment:v01
     resources:
       limits:
         memory: "512Mi"
         cpu: "500m"
     ports:
-      - containerPort: 8080
+      - containerPort: 8081
   - name: redis
     image: redis
     resources:

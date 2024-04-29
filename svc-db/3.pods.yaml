@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: soa-db
+  labels:
+    app: soa-db
+spec:
+  containers:
+  - name: soa-db
+    image: huu2412002/soa-db
+    resources:
+      limits:
+        memory: "512Mi"
+        cpu: "500m"
+    ports:
+      - containerPort: 1433

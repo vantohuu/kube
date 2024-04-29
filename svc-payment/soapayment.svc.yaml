@@ -3,10 +3,11 @@ kind: Service
 metadata:
   name: svc-soa-payment
 spec:
+  clusterIP: 10.110.64.36
   selector:
      app: soa-payment
   type: ClusterIP
   ports:
-    - name: port1
+    - name: port2
       port: 80
       targetPort: 8081

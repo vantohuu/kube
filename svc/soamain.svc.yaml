@@ -3,6 +3,7 @@ kind: Service
 metadata:
   name: svc-soa-main
 spec:
+  clusterIP: 10.107.244.72
   selector:
      app: soa-main
   type: ClusterIP
