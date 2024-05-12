@@ -6,8 +6,8 @@
 
 #### B2: Triển khai ingress nginx controller
 
-Thực hiện step 1-3 theo hướng dẫn https://platform9.com/learn/v1.0/tutorials/nginix-controller-via-yaml
-Sau khi thực hiện xong 3 bước ta tạo được một namespace ingress-nginx
+  - Thực hiện step 1-3 theo hướng dẫn https://platform9.com/learn/v1.0/tutorials/nginix-controller-via-yaml
+  - Sau khi thực hiện xong 3 bước ta tạo được một namespace ingress-nginx
 
 #### B3: Triển khai các service lên namspace ingress-nginx vừa triển khai xong
 
@@ -31,7 +31,7 @@ Vào thư mục kube
      +  kubectl apply -f soapayment.svc.yaml --namespace ingress-nginx (nếu muốn xóa cái vừa triển khai thì thay apply thành delete)
 
 
-- **_Dưa các services lên ingress_**
+- **_Đưa các services lên ingress_**
   - Vao thư mục svc bằng cách: cd ../ingress
     +  kubectl apply -f nginx.ingress.yaml --namespace ingress-nginx (nếu muốn xóa cái vừa triển khai thì thay apply thành delete)
 
