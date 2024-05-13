@@ -6,8 +6,8 @@
 
 #### B2: Triển khai ingress nginx controller
 
-  - Thực hiện step 1-3 theo hướng dẫn https://platform9.com/learn/v1.0/tutorials/nginix-controller-via-yaml
-  - Sau khi thực hiện xong 3 bước ta tạo được một namespace ingress-nginx
+  - Thực hiện step 1-4 theo hướng dẫn [https://platform9.com/learn/v1.0/tutorials/nginix-controller-via-yaml](https://spacelift.io/blog/kubernetes-ingress)
+  - Sau khi thực hiện xong 4 bước ta tạo được một namespace ingress-nginx
 
 #### B3: Triển khai các service lên namspace ingress-nginx vừa triển khai xong
 
